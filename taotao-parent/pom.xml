@@ -7,8 +7,10 @@
     <groupId>com.taotao</groupId>
     <artifactId>taotao-parent</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <!--使用pom聚合方式打包 这里一开始没有声明子模块taotao-common导致对taotao-common中的package一直引用失败 -->
     <modules>
         <module>../taotao-manager</module>
+        <module>../taotao-common</module>
     </modules>
     <packaging>pom</packaging>
 
