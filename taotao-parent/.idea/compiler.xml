@@ -12,6 +12,7 @@
         <module name="taotao-manager-service" />
         <module name="taotao-manager-web" />
         <module name="taotao-portal" />
+        <module name="taotao-rest" />
         <module name="taotao-search" />
       </profile>
     </annotationProcessing>

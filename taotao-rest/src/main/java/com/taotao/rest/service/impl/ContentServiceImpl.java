@@ -31,17 +31,17 @@ public class ContentServiceImpl implements ContentService {
     public List<TbContent> getContentList(Long cid) {
         //查询数据库之前查询redis缓存
         //如果有直接返回 否则查询数据库
-//        try {
-//            //从redis中取出缓存数据
-//            String json = jedisClient.hget(REDIS_CONTENT_KEY, cid+"");
-//            if(!org.apache.commons.lang3.StringUtils.isBlank(json)) {
-//                //json转list
-//                List<TbContent> list = JsonUtils.jsonToList(json, TbContent.class);
-//                return list;
-//            }
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
+        try {
+            //从redis中取出缓存数据
+            String json = jedisClient.hget(REDIS_CONTENT_KEY, cid+"");
+            if(!org.apache.commons.lang3.StringUtils.isBlank(json)) {
+                //json转list
+                List<TbContent> list = JsonUtils.jsonToList(json, TbContent.class);
+                return list;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
         TbContentExample example = new TbContentExample();
         TbContentExample.Criteria criteria = example.createCriteria();
@@ -49,14 +49,14 @@ public class ContentServiceImpl implements ContentService {
         List<TbContent> list = contentMapper.selectByExampleWithBLOBs(example);
 
         //返回结果前 添加到redis缓存
-//        try {
-//            //规范key 使用hash
-//            //定义保存内容的key hash中每个项是cid
-//            //value是转换成json的list
-//            jedisClient.hset(REDIS_CONTENT_KEY,cid+"", JsonUtils.objectToJson(list));
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
+        try {
+            //规范key 使用hash
+            //定义保存内容的key hash中每个项是cid
+            //value是转换成json的list
+            jedisClient.hset(REDIS_CONTENT_KEY,cid+"", JsonUtils.objectToJson(list));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         return list;
     }
 

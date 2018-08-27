@@ -23,36 +23,36 @@ public class ItemCatServiceImpl implements ItemCatService {
 
     //先去applicationContext-service.xml中打开jedisClient实现类的注入的注释
     //再打开此处注释注入jedisClient使用redis
-//    @Autowired
-//    private JedisClient jedisClient;
-//    @Value("${REDIS_CONTENT_CAT_KEY}")
-//    private String REDIS_CONTENT_CAT_KEY;
+    @Autowired
+    private JedisClient jedisClient;
+    @Value("${REDIS_CONTENT_CAT_KEY}")
+    private String REDIS_CONTENT_CAT_KEY;
 
     @Override
     public ItemCatResult getItemCatService() {
         //从缓存中取内容
-//        try {
-//            String result = jedisClient.hget(REDIS_CONTENT_CAT_KEY, "0");
-//            if (!StringUtils.isBlank(result)) {
-//                //把字符串转换成list
-//                return JsonUtils.jsonToPojo(result, ItemCatResult.class);
-//            }
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
+        try {
+            String result = jedisClient.hget(REDIS_CONTENT_CAT_KEY, "0");
+            if (!StringUtils.isBlank(result)) {
+                //把字符串转换成list
+                return JsonUtils.jsonToPojo(result, ItemCatResult.class);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
         List catList = getItemCatList(0l);
         ItemCatResult result = new ItemCatResult();
         result.setData(catList);
 
         //向缓存中添加内容
-//        try {
-//            //把list转换成字符串
-//            String cacheString = JsonUtils.objectToJson(result);
-//            jedisClient.hset(REDIS_CONTENT_CAT_KEY, "0", cacheString);
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
+        try {
+            //把list转换成字符串
+            String cacheString = JsonUtils.objectToJson(result);
+            jedisClient.hset(REDIS_CONTENT_CAT_KEY, "0", cacheString);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         return result;
     }
 

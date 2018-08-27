@@ -1,8 +1,14 @@
 /Users/monkeysmac/JavaWebProject/taotao-mall/taotao-rest/src/main/java/com/taotao/rest/service/impl/ItemCatServiceImpl.java
-/Users/monkeysmac/JavaWebProject/taotao-mall/taotao-rest/src/main/java/com/taotao/rest/controller/ItemCatController.java
+/Users/monkeysmac/JavaWebProject/taotao-mall/taotao-rest/src/main/java/com/taotao/rest/service/impl/ItemServiceImpl.java
+/Users/monkeysmac/JavaWebProject/taotao-mall/taotao-rest/src/main/java/com/taotao/rest/component/impl/JedisClientSingle.java
+/Users/monkeysmac/JavaWebProject/taotao-mall/taotao-rest/src/main/java/com/taotao/rest/controller/ItemController.java
 /Users/monkeysmac/JavaWebProject/taotao-mall/taotao-rest/src/main/java/com/taotao/rest/pojo/CatNode.java
+/Users/monkeysmac/JavaWebProject/taotao-mall/taotao-rest/src/main/java/com/taotao/rest/controller/ContentController.java
+/Users/monkeysmac/JavaWebProject/taotao-mall/taotao-rest/src/main/java/com/taotao/rest/controller/ItemCatController.java
+/Users/monkeysmac/JavaWebProject/taotao-mall/taotao-rest/src/main/java/com/taotao/rest/component/impl/JedisClientCluster.java
+/Users/monkeysmac/JavaWebProject/taotao-mall/taotao-rest/src/main/java/com/taotao/rest/component/JedisClient.java
 /Users/monkeysmac/JavaWebProject/taotao-mall/taotao-rest/src/main/java/com/taotao/rest/service/impl/ContentServiceImpl.java
 /Users/monkeysmac/JavaWebProject/taotao-mall/taotao-rest/src/main/java/com/taotao/rest/service/ItemCatService.java
 /Users/monkeysmac/JavaWebProject/taotao-mall/taotao-rest/src/main/java/com/taotao/rest/pojo/ItemCatResult.java
 /Users/monkeysmac/JavaWebProject/taotao-mall/taotao-rest/src/main/java/com/taotao/rest/service/ContentService.java
-/Users/monkeysmac/JavaWebProject/taotao-mall/taotao-rest/src/main/java/com/taotao/rest/controller/ContentController.java
+/Users/monkeysmac/JavaWebProject/taotao-mall/taotao-rest/src/main/java/com/taotao/rest/service/ItemService.java
