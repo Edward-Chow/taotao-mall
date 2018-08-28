@@ -12,6 +12,8 @@
         <module>../taotao-manager</module>
         <module>../taotao-common</module>
         <module>../taotao-search</module>
+        <module>../taotao-sso</module>
+        <module>../taotao-rest</module>
     </modules>
     <packaging>pom</packaging>
 

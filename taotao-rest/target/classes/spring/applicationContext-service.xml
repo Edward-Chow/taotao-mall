@@ -14,7 +14,7 @@
         <constructor-arg name="port" value="6379"/>
     </bean>
     <!--配置redis客户端实现类-->
-    <bean id="jedisClientSingle" class="com.taotao.rest.component.impl.JedisClientSingle"/>
+    <bean id="jedisClientSingle" class="com.taotao.rest.JedisClientSingle"/>
 
     <!--配置redis客户端集群版本-->
     <!--<bean id="jedisCluster" class="redis.clients.jedis.JedisCluster">-->
@@ -48,5 +48,5 @@
         <!--</constructor-arg>-->
     <!--</bean>-->
     <!--集群版redis客户端实现类注入-->
-    <!--<bean id="jedisClientCluster" class="com.taotao.rest.component.impl.JedisClientCluster"/>-->
+    <!--<bean id="jedisClientCluster" class="com.taotao.rest.JedisClientCluster"/>-->
 </beans>

@@ -1,0 +1,10 @@
+/Users/monkeysmac/JavaWebProject/taotao-mall/taotao-sso/src/main/java/com/taotao/sso/component/JedisClient.java
+/Users/monkeysmac/JavaWebProject/taotao-mall/taotao-sso/src/main/java/com/taotao/sso/service/impl/RegisterServiceImpl.java
+/Users/monkeysmac/JavaWebProject/taotao-mall/taotao-sso/src/main/java/com/taotao/sso/component/impl/JedisClientCluster.java
+/Users/monkeysmac/JavaWebProject/taotao-mall/taotao-sso/src/main/java/com/taotao/sso/controller/RegisterController.java
+/Users/monkeysmac/JavaWebProject/taotao-mall/taotao-sso/src/main/java/com/taotao/sso/service/LoginService.java
+/Users/monkeysmac/JavaWebProject/taotao-mall/taotao-sso/src/main/java/com/taotao/sso/service/RegisterService.java
+/Users/monkeysmac/JavaWebProject/taotao-mall/taotao-sso/src/main/java/com/taotao/sso/component/impl/JedisClientSingle.java
+/Users/monkeysmac/JavaWebProject/taotao-mall/taotao-sso/src/main/java/com/taotao/sso/controller/PageController.java
+/Users/monkeysmac/JavaWebProject/taotao-mall/taotao-sso/src/main/java/com/taotao/sso/service/impl/LoginServiceImpl.java
+/Users/monkeysmac/JavaWebProject/taotao-mall/taotao-sso/src/main/java/com/taotao/sso/controller/LoginController.java
