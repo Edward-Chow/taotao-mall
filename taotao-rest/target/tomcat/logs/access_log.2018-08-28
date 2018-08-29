@@ -1,0 +1,6 @@
+127.0.0.1 - - [28/Aug/2018:16:42:55 +0800] "GET /rest/item/base/1018006 HTTP/1.1" 200 404 http-bio-8081-exec-1 4808
+127.0.0.1 - - [28/Aug/2018:16:43:03 +0800] "GET /rest/item/desc/1018006 HTTP/1.1" 200 5802 http-bio-8081-exec-3 4115
+127.0.0.1 - - [28/Aug/2018:16:43:20 +0800] "GET /rest/item/base/1018006 HTTP/1.1" 200 404 http-bio-8081-exec-5 4052
+127.0.0.1 - - [28/Aug/2018:17:08:29 +0800] "GET /rest/item/base/1018006 HTTP/1.1" 200 404 http-bio-8081-exec-7 4103
+127.0.0.1 - - [28/Aug/2018:17:08:35 +0800] "GET /rest/item/desc/1018006 HTTP/1.1" 200 5802 http-bio-8081-exec-9 4054
+127.0.0.1 - - [28/Aug/2018:17:08:40 +0800] "GET /rest/item/base/1018006 HTTP/1.1" 200 404 http-bio-8081-exec-1 4046

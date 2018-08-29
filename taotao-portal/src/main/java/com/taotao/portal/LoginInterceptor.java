@@ -3,6 +3,7 @@ package com.taotao.portal;
 import com.sun.org.apache.regexp.internal.RE;
 import com.taotao.pojo.TbUser;
 import com.taotao.portal.service.UserService;
+import org.omg.CORBA.Request;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.servlet.HandlerInterceptor;
@@ -24,6 +25,7 @@ public class LoginInterceptor implements HandlerInterceptor {
             httpServletResponse.sendRedirect(SSO_LOGIN_URL + "?redirectURL=" + httpServletRequest.getRequestURL());
             return false;
         }
+        httpServletRequest.setAttribute("user", user);
         return true;
     }
 

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!-- 配置分页插件 -->
+    <plugins>
+        <plugin interceptor="com.github.pagehelper.PageInterceptor">
+            <!-- 这里要是用PageInterceptor,PageHelper5.0.0的PageHelper没有实现PageInterceptor,且不能设置数据库方言，
+            否则出现java.lang.ClassCastException: com.github.pagehelper.PageHelper cannot be cast to org.apache.ibatis.plugin.Interceptor
+            错误 -->
+            <!--&lt;!&ndash; 指定数据库方言 &ndash;&gt;-->
+            <!--<property name="dialect" value="mysql"/>-->
+        </plugin>
+    </plugins>
+</configuration>
